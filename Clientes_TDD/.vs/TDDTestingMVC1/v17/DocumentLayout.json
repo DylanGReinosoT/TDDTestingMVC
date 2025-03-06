@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|c:\\users\\admin\\desktop\\6to semestre\\pruebas de software\\tercer parcial\\clientes_tdd\\reqnrolltestproject\\stepdefinitions\\editarstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|solutionrelative:reqnrolltestproject\\stepdefinitions\\editarstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|c:\\users\\admin\\desktop\\6to semestre\\pruebas de software\\tercer parcial\\clientes_tdd\\reqnrolltestproject\\stepdefinitions\\eliminarstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|solutionrelative:reqnrolltestproject\\stepdefinitions\\eliminarstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5981D9C1-B6B2-415F-B440-A052BC94FE33}|TDDTestingMVC1\\TDDTestingMVC1.csproj|c:\\users\\admin\\desktop\\6to semestre\\pruebas de software\\tercer parcial\\clientes_tdd\\tddtestingmvc1\\data\\clientedataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5981D9C1-B6B2-415F-B440-A052BC94FE33}|TDDTestingMVC1\\TDDTestingMVC1.csproj|solutionrelative:tddtestingmvc1\\data\\clientedataaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|c:\\users\\admin\\desktop\\6to semestre\\pruebas de software\\tercer parcial\\clientes_tdd\\reqnrolltestproject\\features\\delete.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|solutionrelative:reqnrolltestproject\\features\\delete.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|c:\\users\\admin\\desktop\\6to semestre\\pruebas de software\\tercer parcial\\clientes_tdd\\reqnrolltestproject\\features\\edit.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AC5F7580-851A-453D-827A-96B4C052F351}|ReqnrollTestProject\\ReqnrollTestProject.csproj|solutionrelative:reqnrolltestproject\\features\\edit.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteDataAccessLayer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\TDDTestingMVC1\\Data\\ClienteDataAccessLayer.cs",
+              "RelativeDocumentMoniker": "TDDTestingMVC1\\Data\\ClienteDataAccessLayer.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\TDDTestingMVC1\\Data\\ClienteDataAccessLayer.cs",
+              "RelativeToolTip": "TDDTestingMVC1\\Data\\ClienteDataAccessLayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:52:50.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EliminarStepDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\StepDefinitions\\EliminarStepDefinitions.cs",
+              "RelativeDocumentMoniker": "ReqnrollTestProject\\StepDefinitions\\EliminarStepDefinitions.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\StepDefinitions\\EliminarStepDefinitions.cs",
+              "RelativeToolTip": "ReqnrollTestProject\\StepDefinitions\\EliminarStepDefinitions.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAuwJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:39:31.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditarStepDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\StepDefinitions\\EditarStepDefinitions.cs",
+              "RelativeDocumentMoniker": "ReqnrollTestProject\\StepDefinitions\\EditarStepDefinitions.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\StepDefinitions\\EditarStepDefinitions.cs",
+              "RelativeToolTip": "ReqnrollTestProject\\StepDefinitions\\EditarStepDefinitions.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAuwNoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:04:30.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.feature",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\Features\\Edit.feature",
+              "RelativeDocumentMoniker": "ReqnrollTestProject\\Features\\Edit.feature",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\Features\\Edit.feature",
+              "RelativeToolTip": "ReqnrollTestProject\\Features\\Edit.feature",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwCIAAABNAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI9SURBVDhPddFNaJRXFMbx330nTr411aDvhLZGDSgK4ke7KBT8SFEo3ZTSZhAqhdIidNVdXYmCAcFVKbhy04UmCwVbuygUW2gDpWAX7UJpqlJQZiaJpo6JThInt4v0TWZEz\u002B4\u002B53n\u002B95x7g\u002BfVxbRbsB2b8FRwR91NR8qzTb4YY2gWMJp\u002BhM\u002BxHS3/d\u002BbxJ4YVy5cbIyuAkbQNZ/EZtCZ5c4vzkpBoTfKe1GuZ8wshnDVUqkOyDOBTHIMda7b6ZfCKHau3Otr/vp8OXhZW7johxreywxJgJO3BKeTW5ntUF2Zs7HzFG72vebsw6PHTJ6KYZdpx2rd9QcOOh7FmY\u002BfLfjxwyQ\u002BVn\u002B279q4H8/8am/rN/bnpLJzVHrOLm3ErW2EX3Htccv72BS0hp1KbVKlNulEdNzE31RxfertdGt6gBepx0T\u002Bzd92ojqvV55bdA139hncedyjdv6yhUwPgNgx0b/LV3mEHN7ypt3WddfmXFNrWy4Wcw\u002BkB5/aeaQTctfyNo\u002BkW0V9BSLZ09Xu4UDU2\u002BI0vx8/btnrAtu4B7419rCPXoVSrQI24QbFSXZpgqHwLX0fR3zN3dK/qEkLi9\u002Bk//Dp1XV97qh4XszBcUKxUVyaAkbQPV7Eb1uZ7TM8/lIRER0u7RwszmXNCiPsMVW42A\u002BBi2is4h3fQ1tRbqlkMKZa/y4RmAIwWVoleJx7Dhw2dMj5RLF9t0J4DyGq0cEiM3\u002BMerhBOKpYmnrW9GDBSeJW4E9cl9ZIPJp91gP8An260t87tLxkAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-02-27T15:47:42.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.feature",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\Features\\Delete.feature",
+              "RelativeDocumentMoniker": "ReqnrollTestProject\\Features\\Delete.feature",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\6TO SEMESTRE\\PRUEBAS DE SOFTWARE\\TERCER PARCIAL\\Clientes_TDD\\ReqnrollTestProject\\Features\\Delete.feature",
+              "RelativeToolTip": "ReqnrollTestProject\\Features\\Delete.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI9SURBVDhPddFNaJRXFMbx330nTr411aDvhLZGDSgK4ke7KBT8SFEo3ZTSZhAqhdIidNVdXYmCAcFVKbhy04UmCwVbuygUW2gDpWAX7UJpqlJQZiaJpo6JThInt4v0TWZEz\u002B4\u002B53n\u002B95x7g\u002BfVxbRbsB2b8FRwR91NR8qzTb4YY2gWMJp\u002BhM\u002BxHS3/d\u002BbxJ4YVy5cbIyuAkbQNZ/EZtCZ5c4vzkpBoTfKe1GuZ8wshnDVUqkOyDOBTHIMda7b6ZfCKHau3Otr/vp8OXhZW7johxreywxJgJO3BKeTW5ntUF2Zs7HzFG72vebsw6PHTJ6KYZdpx2rd9QcOOh7FmY\u002BfLfjxwyQ\u002BVn\u002B279q4H8/8am/rN/bnpLJzVHrOLm3ErW2EX3Htccv72BS0hp1KbVKlNulEdNzE31RxfertdGt6gBepx0T\u002Bzd92ojqvV55bdA139hncedyjdv6yhUwPgNgx0b/LV3mEHN7ypt3WddfmXFNrWy4Wcw\u002BkB5/aeaQTctfyNo\u002BkW0V9BSLZ09Xu4UDU2\u002BI0vx8/btnrAtu4B7419rCPXoVSrQI24QbFSXZpgqHwLX0fR3zN3dK/qEkLi9\u002Bk//Dp1XV97qh4XszBcUKxUVyaAkbQPV7Eb1uZ7TM8/lIRER0u7RwszmXNCiPsMVW42A\u002BBi2is4h3fQ1tRbqlkMKZa/y4RmAIwWVoleJx7Dhw2dMj5RLF9t0J4DyGq0cEiM3\u002BMerhBOKpYmnrW9GDBSeJW4E9cl9ZIPJp91gP8An260t87tLxkAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-02-27T13:29:05.551Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+﻿@model TDDTestingMVC1.Models.Cliente
+
+@{
+    ViewData["Title"] = "Eliminar Cliente";
+}
+
+<h1 class="text-center text-danger">Eliminar Cliente</h1>
+
+@if (Model != null)
+{
+    <div class="card border-danger">
+        <h5 class="card-header bg-danger text-white">Confirmación de Eliminación</h5>
+        <div class="card-body">
+            <p>¿Estás seguro de que deseas eliminar el siguiente cliente?</p>
+
+            <dl class="row">
+                <dt class="col-sm-3">Código:</dt>
+                <dd class="col-sm-9">@Model.Codigo</dd>
+
+                <dt class="col-sm-3">Nombre Completo:</dt>
+                <dd class="col-sm-9">@Model.Nombres @Model.Apellidos</dd>
+
+                <dt class="col-sm-3">Cédula:</dt>
+                <dd class="col-sm-9">@Model.Cedula</dd>
+
+                <dt class="col-sm-3">Correo:</dt>
+                <dd class="col-sm-9">@Model.Mail</dd>
+
+                <dt class="col-sm-3">Teléfono:</dt>
+                <dd class="col-sm-9">@Model.Telefono</dd>
+            </dl>
+
+            <form asp-action="Delete" asp-route-id="@Model.Codigo" method="post">
+                @Html.AntiForgeryToken()
+                <button id="btn-Delete" type="submit" class="btn btn-danger">
+                    <i class="bi bi-trash"></i> Confirmar Eliminación
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        No se pudo encontrar el cliente a eliminar.
+    </div>
+}

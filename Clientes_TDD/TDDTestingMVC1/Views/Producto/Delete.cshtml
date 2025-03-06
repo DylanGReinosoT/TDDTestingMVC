@@ -1,0 +1,45 @@
+﻿@model TDDTestingMVC1.Models.Producto
+
+@{
+    ViewData["Title"] = "Eliminar Producto";
+}
+
+<h1 class="text-center text-danger">Eliminar Producto</h1>
+
+@if (Model != null)
+{
+    <div class="card border-danger">
+        <h5 class="card-header bg-danger text-white">Confirmación de Eliminación</h5>
+        <div class="card-body">
+            <p>¿Estás seguro de que deseas eliminar el siguiente producto?</p>
+
+            <dl class="row">
+                <dt class="col-sm-3">ID:</dt>
+                <dd class="col-sm-9">@Model.ProductoID</dd>
+
+                <dt class="col-sm-3">Nombre:</dt>
+                <dd class="col-sm-9">@Model.NombreProducto</dd>
+
+                <dt class="col-sm-3">Precio:</dt>
+                <dd class="col-sm-9">@Model.Precio.ToString("C2")</dd>
+
+                <dt class="col-sm-3">Stock:</dt>
+                <dd class="col-sm-9">@Model.UnitsInStock</dd>
+            </dl>
+
+            <form asp-action="Delete" asp-route-id="@Model.ProductoID" method="post">
+                @Html.AntiForgeryToken()
+                <button id="btn-Delete" type="submit" class="btn btn-danger">
+                    <i class="bi bi-trash"></i> Confirmar Eliminación
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        No se pudo encontrar el producto a eliminar.
+    </div>
+}

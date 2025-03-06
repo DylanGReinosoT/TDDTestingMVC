@@ -1,0 +1,62 @@
+﻿@model TDDTestingMVC1.Models.Producto
+
+@{
+    ViewData["Title"] = "Editar Producto";
+}
+
+<h1 class="text-center">Editar Producto</h1>
+<div class="card">
+    <h5 class="card-header">Formulario de Producto</h5>
+    <div class="card-body">
+        @using (Html.BeginForm("Edit", "Producto", FormMethod.Post))
+        {
+            <!-- ID del Producto (oculto) -->
+            <input type="hidden" asp-for="ProductoID" />
+
+            <div class="row g-3">
+                <!-- Nombre -->
+                <div class="col-md-6">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input asp-for="NombreProducto" class="form-control" id="Nombre" required />
+                    <span asp-validation-for="NombreProducto" class="text-danger"></span>
+                </div>
+
+                <!-- Precio -->
+                <div class="col-md-4">
+                    <label for="Precio" class="form-label">Precio</label>
+                    <input asp-for="Precio" class="form-control" id="Precio" type="number" step="0.01" required />
+                    <span asp-validation-for="Precio" class="text-danger"></span>
+                </div>
+
+                <!-- Stock -->
+                <div class="col-md-4">
+                    <label for="Stock" class="form-label">Stock</label>
+                    <input asp-for="UnitsInStock" class="form-control" id="Stock" type="number" required />
+                    <span asp-validation-for="UnitsInStock" class="text-danger"></span>
+                </div>
+
+                <!-- Estado -->
+                <div class="col-md-4">
+                    <label for="Estado" class="form-label">Estado</label>
+                    <select asp-for="Estado" class="form-control" id="Estado">
+                        <option value="true">Disponible</option>
+                        <option value="false">No Disponible</option>
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
+
+                <!-- Botones -->
+                <div class="col-12">
+                    <button id="btn-Edit" class="btn btn-success" type="submit">Actualizar Producto</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,39 @@
+﻿@model TDDTestingMVC1.Models.Cliente
+
+@{
+    ViewData["Title"] = "Detalles del Cliente";
+}
+
+<h1 class="text-center">Detalles del Cliente</h1>
+<div class="card">
+    <h5 class="card-header">Información del Cliente</h5>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Cedula:</dt>
+            <dd class="col-sm-9">@Model.Cedula</dd>
+
+            <dt class="col-sm-3">Apellidos:</dt>
+            <dd class="col-sm-9">@Model.Apellidos</dd>
+
+            <dt class="col-sm-3">Nombres:</dt>
+            <dd class="col-sm-9">@Model.Nombres</dd>
+
+            <dt class="col-sm-3">Fecha de Nacimiento:</dt>
+            <dd class="col-sm-9">@Model.FechaNacimiento.ToShortDateString()</dd>
+
+            <dt class="col-sm-3">Correo Electrónico:</dt>
+            <dd class="col-sm-9">@Model.Mail</dd>
+
+            <dt class="col-sm-3">Teléfono:</dt>
+            <dd class="col-sm-9">@Model.Telefono</dd>
+
+            <dt class="col-sm-3">Dirección:</dt>
+            <dd class="col-sm-9">@Model.Direccion</dd>
+
+            <dt class="col-sm-3">Estado:</dt>
+            <dd class="col-sm-9">@(Model.Estado ? "Activo" : "Inactivo")</dd>
+        </dl>
+        <a asp-action="Edit" asp-route-id="@Model.Codigo" class="btn btn-warning">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    </div>
+</div>

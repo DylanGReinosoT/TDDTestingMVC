@@ -1,0 +1,81 @@
+﻿@model TDDTestingMVC1.Models.OpinionesCliente
+
+@{
+    ViewData["Title"] = "Agregar Opinión de Cliente";
+}
+
+<h1 class="text-center">Agregar Opinión</h1>
+<div class="card">
+    <h5 class="card-header">Formulario de Opinión</h5>
+    <div class="card-body">
+        @using (Html.BeginForm())
+        {
+            <div class="row g-3">
+                <!-- Cliente ID -->
+                <div class="col-md-6">
+                    <label for="ClienteID" class="form-label">Cliente</label>
+                    <select asp-for="ClienteID" class="form-control" id="ClienteID" required>
+                        <option value="">Seleccione un cliente</option>
+                        @if (ViewBag.Clientes != null)
+                        {
+                            foreach (var cliente in (List<TDDTestingMVC1.Models.Cliente>)ViewBag.Clientes)
+                            {
+                                <option value="@cliente.Codigo">@cliente.Nombres @cliente.Apellidos</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="ClienteID" class="text-danger"></span>
+                </div>
+
+                <!-- Producto ID -->
+                <div class="col-md-6">
+                    <label for="ProductoID" class="form-label">Producto</label>
+                    <select asp-for="ProductoID" class="form-control" id="ProductoID" required>
+                        <option value="">Seleccione un producto</option>
+                        @if (ViewBag.Productos != null)
+                        {
+                            foreach (var producto in (List<TDDTestingMVC1.Models.Producto>)ViewBag.Productos)
+                            {
+                                <option value="@producto.ProductoID">@producto.NombreProducto</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="ProductoID" class="text-danger"></span>
+                </div>
+
+
+                <!-- Comentario -->
+                <div class="col-12">
+                    <label for="Comentario" class="form-label">Comentario</label>
+                    <textarea asp-for="Comentario" class="form-control" id="Comentario" required></textarea>
+                    <span asp-validation-for="Comentario" class="text-danger"></span>
+                </div>
+
+                <!-- Calificación -->
+                <div class="col-md-4">
+                    <label for="Calificacion" class="form-label">Calificación</label>
+                    <select asp-for="Calificacion" class="form-control" id="Calificacion" required>
+                        <option value="">Seleccione una calificación</option>
+                        <option value="1">1 - Muy Malo</option>
+                        <option value="2">2 - Malo</option>
+                        <option value="3">3 - Regular</option>
+                        <option value="4">4 - Bueno</option>
+                        <option value="5">5 - Excelente</option>
+                    </select>
+                    <span asp-validation-for="Calificacion" class="text-danger"></span>
+                </div>
+
+                <!-- Botón de Guardar -->
+                <div class="col-12">
+                    <button id="btn-Submit" class="btn btn-primary" type="submit">Guardar Opinión</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

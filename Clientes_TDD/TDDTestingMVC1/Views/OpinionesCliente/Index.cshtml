@@ -1,0 +1,65 @@
+﻿@model IEnumerable<TDDTestingMVC1.Models.OpinionesCliente>
+
+@{
+    ViewData["Title"] = "Administración de Opiniones de Clientes";
+}
+
+<h1 class="text-center">Administración de Opiniones de Clientes</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="card">
+    <h5 class="card-header bg-primary text-white">Listado de Opiniones</h5>
+    <div class="card-body">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.OpinionID)</th>
+                    <th>@Html.DisplayNameFor(model => model.ClienteID)</th>
+                    <th>@Html.DisplayNameFor(model => model.ProductoID)</th>
+                    <th>@Html.DisplayNameFor(model => model.Comentario)</th>
+                    <th>@Html.DisplayNameFor(model => model.Calificacion)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.OpinionID</td>
+                        <td>@item.ClienteID</td>
+                        <td>@item.ProductoID</td>
+                        <td>@item.Comentario</td>
+                        <td>
+                            <span class="badge @(item.Calificacion >= 4 ? "bg-success" : item.Calificacion >= 2 ? "bg-warning" : "bg-danger")">
+                                @item.Calificacion / 5
+                            </span>
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.OpinionID" class="btn btn-info btn-sm">
+                                <i class="bi bi-eye"></i> Detalles
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.OpinionID" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-square"></i> Editar
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.OpinionID" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i> Eliminar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-center mt-3">
+            <a asp-action="Create" class="btn btn-success">
+                <i class="bi bi-chat-dots"></i> Agregar Opinión
+            </a>
+        </div>
+    </div>
+</div>

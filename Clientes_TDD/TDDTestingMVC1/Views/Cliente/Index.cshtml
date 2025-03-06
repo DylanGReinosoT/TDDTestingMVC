@@ -1,0 +1,74 @@
+﻿@model IEnumerable<TDDTestingMVC1.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Administración de Clientes";
+}
+
+<h1 class="text-center">Administración de Clientes</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="card">
+    <h5 class="card-header bg-primary text-white">Listado de Clientes</h5>
+    <div class="card-body">
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Codigo)</th>
+                    <th>@Html.DisplayNameFor(model => model.Cedula)</th>
+                    <th>@Html.DisplayNameFor(model => model.Apellidos)</th>
+                    <th>@Html.DisplayNameFor(model => model.Nombres)</th>
+                    <th>@Html.DisplayNameFor(model => model.FechaNacimiento)</th>
+                    <th>@Html.DisplayNameFor(model => model.Mail)</th>
+                    <th>@Html.DisplayNameFor(model => model.Telefono)</th>
+                    <th>@Html.DisplayNameFor(model => model.Direccion)</th>
+                    <th>@Html.DisplayNameFor(model => model.Estado)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Codigo</td>
+                        <td>@item.Cedula</td>
+                        <td>@item.Apellidos</td>
+                        <td>@item.Nombres</td>
+                        <td>@item.FechaNacimiento.ToShortDateString()</td>
+                        <td>@item.Mail</td>
+                        <td>@item.Telefono</td>
+                        <td>@item.Direccion</td>
+                        <td>
+                            <span class="badge @(item.Estado ? "bg-success" : "bg-danger")">
+                                @(item.Estado ? "Activo" : "Inactivo")
+                            </span>
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.Codigo" class="btn btn-info btn-sm">
+                                <i class="bi bi-eye"></i> Detalles
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Codigo" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-square"></i> Editar
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.Codigo" class="btn btn-danger"
+                               ;">
+                                Eliminar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-center mt-3">
+            <a asp-action="Create" class="btn btn-success">
+                <i class="bi bi-person-plus-fill"></i> Crear Cliente
+            </a>
+        </div>
+    </div>
+</div>

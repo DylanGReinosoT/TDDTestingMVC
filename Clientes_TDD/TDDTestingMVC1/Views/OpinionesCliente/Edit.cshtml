@@ -1,0 +1,81 @@
+﻿@model TDDTestingMVC1.Models.OpinionesCliente
+
+@{
+    ViewData["Title"] = "Editar Opinión de Cliente";
+}
+
+<h1 class="text-center">Editar Opinión de Cliente</h1>
+<div class="card">
+    <h5 class="card-header">Formulario de Opinión</h5>
+    <div class="card-body">
+        @using (Html.BeginForm("Edit", "OpinionesCliente", FormMethod.Post))
+        {
+            <!-- ID de Opinión Cliente (oculto) -->
+            <input type="hidden" asp-for="OpinionID" />
+
+            <div class="row g-3">
+                <!-- Cliente -->
+                <div class="col-md-6">
+                    <label for="ClienteID" class="form-label">Cliente</label>
+                    <select asp-for="ClienteID" class="form-control" id="ClienteID" required>
+                        <option value="">Seleccione un cliente</option>
+                        @if (ViewBag.Clientes != null)
+                        {
+                            foreach (var cliente in (List<TDDTestingMVC1.Models.Cliente>)ViewBag.Clientes)
+                            {
+                                <option value="@cliente.Codigo" selected="@(cliente.Codigo == Model.ClienteID ? "selected" : null)">
+                                    @cliente.Nombres @cliente.Apellidos
+                                </option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="ClienteID" class="text-danger"></span>
+                </div>
+
+                <!-- Producto -->
+                <div class="col-md-6">
+                    <label for="ProductoID" class="form-label">Producto</label>
+                    <select asp-for="ProductoID" class="form-control" id="ProductoID" required>
+                        <option value="">Seleccione un producto</option>
+                        @if (ViewBag.Productos != null)
+                        {
+                            foreach (var producto in (List<TDDTestingMVC1.Models.Producto>)ViewBag.Productos)
+                            {
+                                <option value="@producto.ProductoID" selected="@(producto.ProductoID == Model.ProductoID ? "selected" : null)">
+                                    @producto.NombreProducto
+                                </option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="ProductoID" class="text-danger"></span>
+                </div>
+
+                <!-- Comentario -->
+                <div class="col-md-12">
+                    <label for="Comentario" class="form-label">Comentario</label>
+                    <textarea asp-for="Comentario" class="form-control" id="Comentario" rows="3" required></textarea>
+                    <span asp-validation-for="Comentario" class="text-danger"></span>
+                </div>
+
+                <!-- Calificación -->
+                <div class="col-md-4">
+                    <label for="Calificacion" class="form-label">Calificación</label>
+                    <input asp-for="Calificacion" class="form-control" id="Calificacion" type="number" min="1" max="5" required />
+                    <span asp-validation-for="Calificacion" class="text-danger"></span>
+                </div>
+
+                <!-- Botones -->
+                <div class="col-12">
+                    <button id="btn-Edit" class="btn btn-success" type="submit">Actualizar Opinión</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
